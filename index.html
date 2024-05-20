@@ -54,39 +54,121 @@
         border-radius: 5px;
       }
 
-
-      /* Hint: What can you do with a media query and flexbox? */
-      /* @media (max-width: 350px) {
-        .pricing-container{
-          width: 60%;
-        }
-
-        .pricing-plan{
-          background-color: rgb(230, 229, 229);
-        }
-    }
- */
-      @media (min-width: 768px) {
+      @media (min-width: 768px) and (max-width: 911px) {
         
         .pricing-container{
           display: inline-flex;
           flex-direction: row;
           flex-wrap: wrap;
+          gap: 2rem;
           max-width: 100%;
+          width: 100%;
           justify-content: center;
+          align-content: space-evenly;          
         }
 
         .pricing-plan{
-        flex-basis: 300px;
-        width: 300px;
-        text-align: center;
-        align-content: center;
-        padding: 1.5rem;
+          flex-basis: 400px;
+          width: 300px;
+          text-align: center;
+          justify-content: center;
+          align-content: space-evenly;
+          padding: 2rem;
+          margin: 0rem;
+          box-sizing: border-box;
+      }
+
+      li{
         font-size: 1rem;
-        margin-top: 1rem;
       }
+
+      .plan-title{
+        font-size: 1.5rem;
       }
-      
+
+      .plan-price{
+        font-size: 3rem;
+      }
+    }
+
+    @media (min-width: 912px) and (max-width: 1024px){
+      .pricing-container{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 3rem;
+          width: 100%;
+      }
+
+      .pricing-plan{
+          flex-basis: 400px;
+          width: 500px;
+          text-align: center;
+          align-items: center;
+          align-content: space-evenly;
+          padding: 2rem;
+          margin: 0rem;
+          box-sizing: border-box;
+      }
+
+      li{
+        font-size: 1.2rem;
+      }
+
+      .plan-title{
+        font-size: 1.7rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .plan-price{
+        font-size: 3.5em;
+      }
+
+      .plan-button{
+        padding: 0.9rem 1.5rem;
+      }
+    }
+
+
+    @media (min-width: 1025px){
+      .pricing-container{
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          justify-content: center;
+      }
+
+      .pricing-plan{
+          flex-basis: 370px;
+          width: 200px;
+          text-align: center;
+          justify-content: center;
+          align-content: space-evenly;
+          padding: 2rem;
+          margin: 0rem;
+          box-sizing: border-box;
+      }
+
+      li{
+        font-size: 0.95rem;
+      }
+
+      .plan-title{
+        font-size: 1.7rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .plan-price{
+        font-size: 2.5em;
+      }
+
+      .plan-button{
+        padding: 0.9rem 1.5rem;
+      }
+    }
+  
       
       
     </style>
